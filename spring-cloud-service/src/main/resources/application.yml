@@ -1,9 +1,9 @@
-server:
-  port: 8081
 spring:
   application:
     name: hellow-service
+server:
+  port: 8081
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://127.0.0.1:9081/eureka,http://127.0.0.1:9082/eureka
