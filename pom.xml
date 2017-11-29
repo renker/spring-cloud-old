@@ -18,6 +18,7 @@
   <module>spring-cloud-service</module>
   <module>spring-cloud-client</module>
   <module>spring-cloud-hystrix-dashboard</module>
+  <module>spring-cloud-service-api</module>
   </modules>
   
   <dependencyManagement>
