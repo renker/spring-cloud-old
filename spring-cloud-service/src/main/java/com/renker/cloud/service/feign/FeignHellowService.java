@@ -1,12 +1,14 @@
 package com.renker.cloud.service.feign;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-public class FeignHellowService {
-	@RequestMapping("feign/hellow")
-	public String hellow(@RequestParam String name){
-		return "hellow "+name;
+import com.ernker.cloud.service.api.IFeignHellowService;
+
+@RestController
+public class FeignHellowService implements IFeignHellowService{
+
+	public String hellow5(String name) {
+		return "hellow5 "+name;
 	}
 	
 }

@@ -28,11 +28,11 @@
 	  	<groupId>org.springframework.boot</groupId>
 	  	<artifactId>spring-boot-starter-actuator</artifactId>
 	  </dependency>
-	  <!-- <dependency>
+	  <dependency>
 	  	<groupId>com.renker.cloud</groupId>
 	  	<artifactId>spring-cloud-service-api</artifactId>
 	  	<version>0.0.1-SNAPSHOT</version>
-	  </dependency> -->
+	  </dependency>
   </dependencies>
   
 </project>

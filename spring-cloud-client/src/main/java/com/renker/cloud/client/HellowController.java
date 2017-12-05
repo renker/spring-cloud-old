@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.renker.cloud.client.feign.FeignHellowService;
+import com.renker.cloud.client.feign.LocalFeignHellowService;
 
 @RestController
 public class HellowController {
@@ -17,7 +17,7 @@ public class HellowController {
 	private LocalHellowService localHellowService;
 	
 	@Resource
-	private FeignHellowService feignHellowService;
+	private LocalFeignHellowService localFeignHellowService;
 	
 	@RequestMapping("hellow")
 	public String hellow(){
@@ -32,6 +32,6 @@ public class HellowController {
 	
 	@RequestMapping("feignHellow")
 	public String feignHellow(){
-		return feignHellowService.hellow();
+		return localFeignHellowService.hellow5("测试");
 	}
 }

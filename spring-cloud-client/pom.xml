@@ -35,5 +35,15 @@
   		<artifactId>xml-resolver</artifactId>
   		<version>1.2</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.scala-lang</groupId>
+  		<artifactId>scala-library</artifactId>
+  		<version>2.11.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.renker.cloud</groupId>
+  		<artifactId>spring-cloud-service-api</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 </project>
