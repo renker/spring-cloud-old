@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: hellow-gateway
+server:
+  port: 9090
+  
+zuul:
+  routes:
+    api-a:
+      path: /api-s/**
+      service-id: hellow-service
+    api-b:
+      path: /api-c/**
+      service-id: hellow-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9081/eureka,http://127.0.0.1:9082/eureka
+      
+      
